@@ -67,10 +67,15 @@ Then Add the following in the  <Properties> Tag for compiler settings.
 If we do not add this plugin , we can't able to execute the jUnit test cases from Maven. 
 
 > Step-6: Now add `jUnit Test Case` on the file structure of `src/test/java`.
-> Make sure you do check the Check box of `New jUnit Jupiter Test`  And chek the `setUp` and `tearDown`
+For that, right click `package name` -> Other -> Search `jUnit Test Case` -> Click on `jUnit Test Case`.
 
->Step-7: Final Step TO Execute. 
+> Then, write Name:`YourTestCaseName`
+> 
+> Make sure you do check the Check box of `New jUnit Jupiter Test`  And check the `setUp` and `tearDown`
 
+>Step-7: Write the code for test.
+
+>Step-8: Final Step TO Execute. 
 ```
 Right Click on project -> Run As -> JUnit Test
 ```

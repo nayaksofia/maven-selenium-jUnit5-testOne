@@ -85,4 +85,26 @@ Right Click on project -> Run As -> JUnit Test
 
 > jUnit provide the `Assert Statement` for test cases.  So no need to write `If...else` . 
 
+# WebDriver Locators
 
+Selenium WebDriver uses eight locators to find the elements on a webpage. The object identifiers or locators supported by Selenium are:
+
+> Id(unique, non-dynamic) -> driver.findElement(By.id("Email"));
+
+> Name (unique, non-dynamic) -> driver.findElement(By.name("EmailID"));
+
+> Class (unique, non-dynamic) driver.findElement(By.className(“mandatory”));
+
+>CSSSelector driver.findElement(By.cssSelector(“input.login”); 
+
+> XPath driver.findElement(By.xpath(“//input[@class=‘login’]
+”)
+
+>linkText driver.findElement(By.linkText(“Gmail”));
+
+> Partial LinkText driver.findElement(By.partialLinkText(“Inbox”));
+
+> TagName driver.findElement(By.tagName(“input”));
+
+
+# Time: 1:29:00

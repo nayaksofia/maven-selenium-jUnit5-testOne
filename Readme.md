@@ -106,5 +106,61 @@ Selenium WebDriver uses eight locators to find the elements on a webpage. The ob
 
 > TagName driver.findElement(By.tagName(“input”));
 
+# WebElement Class Methods:
 
-# Time: 1:29:00
+
+> click()
+
+> clear(}
+
+> submit()
+
+> sendKeys()
+
+---
+>isEnabled()
+
+>isDisplayed()
+
+>isSelected()
+---
+
+>findElement()
+
+>findElements()
+
+---
+
+>getCssValue()
+
+>getAttribute()
+
+>getText()
+
+>getTagName()
+
+>getScreenshotAs()
+
+---
+>getLocation()
+
+>getRectangle()
+
+>getSize()
+
+---
+# Timeout Methods
+
+> *Timeouts* are an interface for managing timeout behavior for WebDriver instances
+
+>**implicitlyWait()** : Amount of time the driver should wait while searching for an element (call to findElement) if it is not immediately available. 
+
+>**pageLoadTimeout()** : Amount of time to wait for a page to load completely
+
+>**setScriptTimeout()** : Amount of time to wait for an asynchronous script to finish execution
+
+> **Implicitly waiting** vs. putting **Thread.sleep()**: 
+>*Implicit wait* polls the DOM to wait for a certain amount of time until an element is found. 
+>*Thread.sleep()* causes executing thread to sleep for a specified time. 
+
+# Time: 1:29:00 or 1:35 :39

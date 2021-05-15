@@ -163,4 +163,4 @@ Selenium WebDriver uses eight locators to find the elements on a webpage. The ob
 >*Implicit wait* polls the DOM to wait for a certain amount of time until an element is found. 
 >*Thread.sleep()* causes executing thread to sleep for a specified time. 
 
-# Time: 1:29:00 or 1:35 :39
+# Time: 1:29:00 or 3: 7 : 15

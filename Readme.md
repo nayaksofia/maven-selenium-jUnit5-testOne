@@ -209,4 +209,26 @@ Class Name:LogInTest.java
 
 > `NoAlertPresentException` : This exception triggers when there is no alert, but system is trying to switch to an alert. 
 
-# Time : 3 :53 :43
+# Browser Pop-up
+
+## WebDriver provides API to handle multiple windows
+
+>driver.switchTo().window() //Tells the driver to switch focus to a window by window name or window 
+handle.
+
+
+> driver.getWindowHandle() //Gets the window handle of the current window.
+
+
+> driver.getWindowHandles() //Gets window handles of all the windows opened by the current driver.
+
+## The Two Types Of Parameters the window() method can take are:
+
+> driver.switchTo().window(windowName) // Where “windowName” is the name of the new window opened by the browser.
+
+> driver.switchTo().window(windowHandle) // Where “windowHandle” is the window handle returned by  driver.getWindowHandle(s)() method
+
+## Exception TO BE Handled:
+
+> NoSuchWindowException // This exception triggers when the system tries to switch focus on a window that 
+does not exist

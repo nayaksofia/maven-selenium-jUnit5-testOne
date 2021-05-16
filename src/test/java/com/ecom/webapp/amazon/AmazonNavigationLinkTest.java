@@ -48,25 +48,6 @@ class AmazonNavigationLinkTest {
 		assertEquals(expected, driver.getTitle());
 		
 	}
-//	
-//	@Test
-//	@DisplayName("Amazon Test : Today's Deal Link Verification")
-//	void testTodayLink() {
-//		
-//		//find Today's Deal link
-//		WebElement todayLink = driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(8)"));
-//		assertTrue(todayLink.isDisplayed());
-//		assertTrue(todayLink.isEnabled());
-//		
-//		//click action
-//		todayLink.click();
-//		
-//		//Verifying the test 
-//		String expected1 = "Amazon.in - Today's Deals";
-//		assertEquals(expected1, driver.getTitle());
-//		
-//	}
-
 	//TODO :: Test to verify 3 more nav links from amazon e-commerce web site 
 	
 	//TODO :: NavTest-1

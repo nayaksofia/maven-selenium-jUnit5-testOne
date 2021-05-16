@@ -163,4 +163,50 @@ Selenium WebDriver uses eight locators to find the elements on a webpage. The ob
 >*Implicit wait* polls the DOM to wait for a certain amount of time until an element is found. 
 >*Thread.sleep()* causes executing thread to sleep for a specified time. 
 
-# Time: 1:29:00 or 3: 7 : 15
+
+# TODO :: Registration Form 
+
+> Inside `static` folder: `registrationform.html` file
+```
+Package Name :: com.ecom.webapp.webelement
+Class Name:RegistrationTest.java
+```
+
+#TODO :: LogIn Form
+> Inside `static` folder: `loginform.html` file
+```
+Package Name :: com.ecom.webapp.webelement
+Class Name:LogInTest.java
+```
+
+# JavaScript Alerts
+
+## Syntax for handling Alerts
+
+`Alert = driver.switchTo().alert()`         //Tells the driver to switch focus on alert pop-up window. 
+
+## Key Operations that can be performed on JavaScript popups
+
+> alert.getText() // Gets the text on alert window.
+
+
+> alert.accept() // Accepts the alert (for example, clicking Ok button).
+
+> alert.dismiss() // Dismisses the alert (for example, clicking Cancel button ).
+
+> alert.sendKeys() // Passes text to be entered in any field on the pop-up window.
+
+> alert.getText() // Gets the text on alert window.
+
+
+> alert.accept() // Accepts the alert (for example, clicking Ok button).
+
+> alert.dismiss() // Dismisses the alert (for example, clicking Cancel button ).
+
+> alert.sendKeys() // Passes text to be entered in any field on the pop-up window.
+
+## Exception to be handled
+
+> `NoAlertPresentException` : This exception triggers when there is no alert, but system is trying to switch to an alert. 
+
+# Time : 3 :53 :43

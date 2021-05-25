@@ -1,4 +1,4 @@
- # Maven Based Selenium Test > [Maven + Junit Unit + Selenium ]
+ # Maven Based Selenium Test > [Maven + Junit + Selenium ]
 
 >Step-1: Create Maven Project
 
@@ -232,3 +232,47 @@ handle.
 
 > NoSuchWindowException // This exception triggers when the system tries to switch focus on a window that 
 does not exist
+
+# Topic: Screenshots
+> **TakesScreenshot** is an interface that provides *getScreenshotAs()*  method to capture the screenshot.
+
+> It supports the following three output formats:
+
+>  **Screenshot as file:** 
+> File screenshotOnFailure = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+>**Screenshot As Base64 Data**: 
+>String screenshotBase64 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+
+## Screenshot as raw bytes
+> byte[] screenshotAsArrayOfBytesFromPNG = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+
+## Example: Screenshot
+
+You must provide this command in each testing to keep screenshot of that test
+
+> Create a folder as `screen-shot` to keep the screenshot image in one place. 
+```
+
+//Example: ScreenShot
+	@Test
+	@DisplayName("Amazon Test : Mobile Link Verification Screenshot")
+	void testMobileNavigationLink() throws IOException {
+		
+        Dimension d = new Dimension(480, 620);
+		
+		driver.manage().window().setSize(d);
+		
+		//find mobile link and click
+		driver.findElement(By.cssSelector("#nav-xshop > a:nth-child(3)")).click();
+		
+		//Step-1 :: type cast driver object into takeScreenshot instance 
+			TakesScreenshot tsc = (TakesScreenshot) driver;
+				
+	    //Step-2 :: Generate a screenshot as file 
+			File rsc = tsc.getScreenshotAs(OutputType.FILE);
+			FileHandler.copy(rsc,new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 WorkSpace-Practice-Projects\\phase-5-selenium-junit-test\\test-screenshot\\amazon-mobile.png"));
+					
+	}
+
+```

@@ -45,7 +45,7 @@ public class BrowserWindowScreenShotTest {
 		
 		//Step-2 :: Generate a screenshot as file 
 		File rsc = tsc.getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(rsc,new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 Selenium-Document\\test-screenshot\\amazon-home.png"));
+		FileHandler.copy(rsc,new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 WorkSpace-Practice-Projects\\phase-5-selenium-junit-test\\test-screenshot\\amazon-home.png"));
 		
 	}
 	
@@ -66,7 +66,7 @@ public class BrowserWindowScreenShotTest {
 				
 	    //Step-2 :: Generate a screenshot as file 
 			File rsc = tsc.getScreenshotAs(OutputType.FILE);
-			FileHandler.copy(rsc,new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 Selenium-Document\\test-screenshot\\amazon-mobile.png"));
+			FileHandler.copy(rsc,new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 WorkSpace-Practice-Projects\\phase-5-selenium-junit-test\\test-screenshot\\amazon-mobile.png"));
 					
 	}
 	
@@ -90,7 +90,7 @@ public class BrowserWindowScreenShotTest {
 			 //Generate Screenshot as file
 			 File rsc = tsc.getScreenshotAs(OutputType.FILE);
 			 
-			 FileHandler.copy(rsc, new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 Selenium-Document\\test-screenshot\\" + filename));
+			 FileHandler.copy(rsc, new File("C:\\Users\\nayak\\Desktop\\simplilearn\\Phase_5_FSD\\FSD-5 WorkSpace-Practice-Projects\\phase-5-selenium-junit-test\\test-screenshot" + filename));
 		 }
 		
 	}

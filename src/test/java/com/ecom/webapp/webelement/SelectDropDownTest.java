@@ -102,7 +102,7 @@ public class SelectDropDownTest {
 	void testToVrifyValueBasedSelectedOption1() throws InterruptedException {
 		
 		WebElement select = driver.findElement(By.id("vehicle"));
-		//Let capture the first dropdown by using Class :: Select
+		//Let capture the first drop down by using Class :: Select
 		Select vehicleSelect = new Select(select);
 		
 		// Select bike as first selected option

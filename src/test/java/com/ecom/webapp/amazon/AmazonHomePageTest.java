@@ -15,7 +15,6 @@ class AmazonHomePageTest {
     final  String siteURL = "https://www.amazon.com/";
     //2. Locate A Web Driver BY Locating the path 
     final String driverPath ="driver\\chromedriver.exe"; //absolute path 
-    
     WebDriver driver;
 	
 	@BeforeEach
